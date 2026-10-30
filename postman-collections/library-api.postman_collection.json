@@ -1,0 +1,52 @@
+{
+  "info": {
+    "name": "API Design Mastery - Library API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/health"
+      }
+    },
+    {
+      "name": "List books",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/v1/books"
+      }
+    },
+    {
+      "name": "Get book 1",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/v1/books/1"
+      }
+    },
+    {
+      "name": "Create book",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\":\"API Design in Practice\",\"author\":\"A. Engineer\"}"
+        },
+        "url": "{{baseUrl}}/api/v1/books"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000"
+    }
+  ]
+}
