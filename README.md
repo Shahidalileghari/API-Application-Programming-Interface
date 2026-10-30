@@ -1,8 +1,7 @@
-# API Design Mastery
+# API Design 
 
 A practical, language-independent curriculum for designing reliable, secure, evolvable APIs—with implementation labs using **JavaScript, Node.js, and Express**.
 
-> Design the contract first. Implement it second. Verify it continuously.
 
 ## What you'll learn
 
@@ -113,10 +112,3 @@ npm test
 - Repository integrity and required-file checks are performed when packaging.
 - Runtime execution status is reported alongside the ZIP. Do not interpret static checks as proof that every example runs in every environment.
 
-## Suggested external standards
-
-Use the official specifications and security guidance linked in [`docs/references.md`](docs/references.md). Standards evolve; check the current source before adopting a production requirement.
-
-## License
-
-MIT. See [`LICENSE`](LICENSE).
